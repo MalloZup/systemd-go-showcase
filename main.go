@@ -9,7 +9,7 @@ func main() {
 	target1 := "cups.service"
 	target2 := "unexisting.service"
 
-	conn := SetupConn()
+	conn := setupConn()
 	defer conn.Close()
 
 	units, err := conn.ListUnitsByPatterns([]string{}, []string{"cups*", target2})
@@ -30,7 +30,7 @@ func main() {
 	fmt.Println("unit found test OK!")
 }
 
-func SetupConn() *dbus.Conn {
+func setupConn() *dbus.Conn {
 	conn, err := dbus.New()
 	fmt.Println("created Dbus connection")
 	if err != nil {
