@@ -8,9 +8,15 @@ I assume you run this in your $GOPATH and use install the `ginkgo` and `go-syste
 
 You can run the BDD `kubernetes` framework `ginkgo` with :
 
-`cd ginkgo`
-`go test` or simply `ginkgo`
+```bash
+cd ginkgo
+go test
+``` 
 
+```bash
+cd gingko
+ginkgo -r --randomizeAllSpecs --randomizeSuites --failOnPending --cover --trace --race --progress
+```
 # Minimal without bdd
 
 on GOPATH `go build`. RUN!
