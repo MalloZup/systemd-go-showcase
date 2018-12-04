@@ -4,6 +4,6 @@ This is a minimal example. It is based on lib: https://github.com/coreos/go-syst
 
 # Howto:
 
-on GOPATH go build.
+on GOPATH `go build`. RUN!
 
 Try other services.. :dog:
