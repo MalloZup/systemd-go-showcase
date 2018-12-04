@@ -6,4 +6,4 @@ This is a minimal example. It is based on lib: https://github.com/coreos/go-syst
 
 on GOPATH go build.
 
-Try other services.. :dog
+Try other services.. :dog:
